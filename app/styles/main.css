@@ -5,6 +5,24 @@ body{
     position: relative;
 }
 
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;  
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;    
+}
+
+
 #main{
     max-width: 1050px;
     margin: 2% auto;
@@ -78,12 +96,6 @@ nav{
     top: 35px;
 }
 
-ul{
-    list-style-type: none;  
-    margin: 0;
-    padding: 0;
-}
-
 .inline *{
     display: inline;
 }
@@ -117,12 +129,6 @@ li a:hover {
     color: #d83c3c;
 }
 
-*{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-     box-sizing: border-box;
-}
-
 .page-name, .page-heading{
     color: #13a0f8;
     text-transform:uppercase;
@@ -141,7 +147,6 @@ li a:hover {
 
 .section.page-info{
     padding: 5px 0px;
-    border-bottom: 1px solid #c5c3c3;
 }
 
 .section.main{
@@ -153,12 +158,24 @@ li a:hover {
 .section .page-heading{
     position: relative;
     text-transform: capitalize;
+    display: inline;
+    bottom: 10px;
 }
 
+.page-controls{
+    display: inline;
+    position: relative;
+    margin-left: 455px;
+    bottom: 10px;
+}
 
+.page-controls a{
+    color: #666666;
+    font-weight: 600;
+}
 /* Horizontal Navigation */
 .section-navigation{
-    margin-top: 10px;
+    clear: both;
 }
 
 .section-navigation ul{
