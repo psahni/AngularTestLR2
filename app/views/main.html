@@ -3,7 +3,7 @@
     Recent Campaigns
   </div>
   <div class='page-controls'>
-    <span><a href="#">Update</a></span> | <span><a href='#'>Show All</a></span>
+    <span><a ng-click="update_page();">Update</a></span> | <span><a href='#'>Show All</a></span>
   </div>
   <div class='section-navigation'>
     <ul class='inline'>
@@ -16,6 +16,16 @@
     </ul>
   </div>
   <div class='data-listing'>
-    
+    <div class='row' ng-repeat="campaign in campaign_data" ng-hide='loading'>
+      <span class='column'>{{campaign.name}}</span>
+      <span class='column'>{{campaign.created}}</span>
+      <span class='column'>{{campaign.updated}}</span>
+      <span class='column'>{{campaign.total_views}}</span>
+      <span class='column'>{{campaign.sales}}</span>
+      <span class='column'>{{campaign.end_date}}</span>
+    </div>
+    <div ng-show='loading'>
+        Loading....
+    </div>
   </div>
 </div>

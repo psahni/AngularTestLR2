@@ -20,6 +20,7 @@ ul{
 
 a{
     text-decoration: none;    
+    cursor: pointer;
 }
 
 
@@ -180,7 +181,7 @@ li a:hover {
 
 .section-navigation ul{
     margin: 0;
-    padding: 10px;
+    padding: 8px 0px;
     background-color: #d83c3c;
     color: #EAE4E4;
     overflow: hidden;
@@ -188,6 +189,7 @@ li a:hover {
 
 .section-navigation ul li{    
     float: left;
+    width: 120px;
 }
 
 .section-navigation ul li a{
@@ -195,6 +197,34 @@ li a:hover {
     text-decoration: none;
     cursor: pointer;
     text-align: center;
-    padding: 5px 20px;
     font-weight: 700;
+    padding: 5px 0px;
+    letter-spacing: -1px;
 }
+
+
+/* Data View Listing , Campaign listing*/
+
+.data-listing .row{
+    background-color: #b4b4b4;
+    border-bottom: 1px solid #959595;
+}
+
+.data-listing .row:last-child{
+    border-bottom: none;
+}
+
+.data-listing .row{
+    background-color: #b4b4b4;
+    border-bottom: 1px solid #959595;
+}
+
+.data-listing .row .column{    
+    width: 117px;    
+    display: inline-block;    
+    text-align: center;
+    padding: 15px 0px;
+    padding-left: 4px;
+    font-size: 14px;
+}
+
