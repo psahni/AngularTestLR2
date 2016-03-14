@@ -1,0 +1,183 @@
+body{
+    font-family: sans-serif;
+}
+.container{
+    position: relative;
+}
+
+#main{
+    max-width: 1050px;
+    margin: 2% auto;
+}
+
+.section{
+    margin-left: 255px;
+}
+
+.section.main{    
+    width: 725px;
+    height: 480px;
+}
+
+.section-element{
+    position: relative;
+}
+
+.search-bar{
+    width: 240px;
+    height: 32px;
+    background-color: #666666;
+    padding: 5px 4px;
+    position: absolute;
+    left: 0px;
+}
+
+
+.search-bar form{
+    width:500px;
+    margin:0 auto;
+}
+
+.search-bar input[type='text']{
+    width: 176px;
+    font-style: italic;
+}
+
+.search-bar input[type='submit']{
+    position:relative; 
+    left:-5px;	
+    cursor: pointer;
+    width: 56px;
+    height: 20px;
+    color: white;
+    border: none;
+    background-color: #d83c3c;
+    font-size: 10.5px;
+}
+
+
+nav{    
+    width: 240px;
+    height: 575px;    
+    background-color: #666666;
+    color: #c5c3c3;       
+}
+
+.nav-label{
+    display: block;
+    padding: 25px 10px 10px 10px;
+    text-align: center;   
+    font-size: 19.5px;    
+    font-weight: 600;
+    color: white;
+}
+
+.nav-element{
+    position: absolute;
+    left: 0px; 
+    top: 35px;
+}
+
+ul{
+    list-style-type: none;  
+    margin: 0;
+    padding: 0;
+}
+
+.inline *{
+    display: inline;
+}
+
+nav ul li a{
+    color: #c5c3c3;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0 8px 16px;
+    text-align: center;
+}
+
+nav ul li {
+    text-align: center;
+    border-bottom: 1px solid #a0a0a0;
+}
+
+nav ul li:last-child {
+    border-bottom: none;
+}
+
+
+.active {
+    background-color: white;
+    color: #d83c3c;
+    border-right: 5px solid #d83c3c;
+}
+
+li a:hover {
+    background-color: white;
+    color: #d83c3c;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+.page-name, .page-heading{
+    color: #13a0f8;
+    text-transform:uppercase;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.tab-name{
+    color: #d83c3c;
+    font-weight: 700;
+}
+
+.separater{
+    color: #c5c3c3;
+}
+
+.section.page-info{
+    padding: 5px 0px;
+    border-bottom: 1px solid #c5c3c3;
+}
+
+.section.main{
+    position: relative;
+    top: 45px;
+}
+
+/* Dashboard > Campaigns */
+.section .page-heading{
+    position: relative;
+    text-transform: capitalize;
+}
+
+
+/* Horizontal Navigation */
+.section-navigation{
+    margin-top: 10px;
+}
+
+.section-navigation ul{
+    margin: 0;
+    padding: 10px;
+    background-color: #d83c3c;
+    color: #EAE4E4;
+    overflow: hidden;
+}
+
+.section-navigation ul li{    
+    float: left;
+}
+
+.section-navigation ul li a{
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px 20px;
+    font-weight: 700;
+}
