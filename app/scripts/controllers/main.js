@@ -22,7 +22,7 @@ angular.module('App2')
             $scope.start = $scope.start + 10;
             $scope.end = $scope.end + 10;
             $scope.loading = false ;
-        }, 900);        
+        }, 1000);        
         return false;
     }    
     

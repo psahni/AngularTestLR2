@@ -228,3 +228,9 @@ li a:hover {
     font-size: 14px;
 }
 
+.loading{
+    text-align: center;
+    position: relative;
+    top: 120px;
+}
+
