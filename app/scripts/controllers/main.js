@@ -6,10 +6,13 @@ angular.module('App2')
     $scope.campaignServiceData = campaignServiceData;
     
     $scope.update_page = function(){  
-        $scope.campaignServiceData.getCampaigns();
+        $scope.loading = true;
+        $timeout(function(){  // Added just for better user experience. 
+            $scope.campaignServiceData.getCampaigns();
+            $scope.loading = false;
+        }, 900);        
+        return false;
     };   
-            
-   $scope.campaignServiceData.getCampaigns();
-   
-      
+    
+   $scope.campaignServiceData.getCampaigns();         
   });
