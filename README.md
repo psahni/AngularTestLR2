@@ -1,12 +1,53 @@
-# angular-test-lr2
+#Prerequisites 
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.15.1.
+* Install node package manager (npm)
 
-## Build & development
 
-Run `grunt` for building and `grunt serve` for preview.
+```
+    sudo apt-get install nodejs npm
+```
 
-## Testing
 
-Running `grunt test` will run the unit tests with karma.
+* Install bower and grunt
+
+```
+    npm install -g yo grunt-cli bower
+```
+
+
+# Application Set up
+
+* Clone the applciation
+
+```
+    git clone https://github.com/psahni/AngularTestLg.git
+```
+
+* Install dependencies 
+
+```
+npm install
+
+``` 
+
+```
+( if permission issue occurs, do sudo npm install)
+```
+
+Then,
+
+```
+bower install
+```
+
+## Start Server
+
+```
+grunt server
+```
+
+## Access the application at 
+
+```
+http://localhost:9000
+```
