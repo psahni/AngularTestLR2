@@ -22,7 +22,7 @@ angular.module('App2')
     
     campaign_service_data.getCampaigns = function(query){
         if(query){            
-            campaign_service_data.current_campaign_data = $filter('filter')(campaign_service_data.all_campaigns(), query)
+            campaign_service_data.current_campaign_data = $filter('filter')(campaign_service_data.all_campaigns(), {name: query})
             return campaign_service_data.current_campaign_data;
         }
         else{           

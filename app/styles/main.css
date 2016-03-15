@@ -53,18 +53,17 @@ a{
 
 
 .search-bar form{
-    width:500px;
+    width: 100%;
     margin:0 auto;
 }
 
 .search-bar input[type='text']{
-    width: 176px;
+    width: 170px;
     font-style: italic;
 }
 
 .search-bar input[type='submit']{
-    position:relative; 
-    left:-5px;	
+    position:relative;     
     cursor: pointer;
     width: 56px;
     height: 20px;
