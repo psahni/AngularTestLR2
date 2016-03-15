@@ -16,7 +16,7 @@
     </ul>
   </div>
   <div class='data-listing'>
-    <div class='row' ng-repeat="campaign in campaign_data" ng-hide='loading'>
+    <div class='row' ng-repeat="campaign in campaignServiceData.current_campaign_data" ng-hide='loading'>
       <span class='column'>{{campaign.name}}</span>
       <span class='column'>{{campaign.created}}</span>
       <span class='column'>{{campaign.updated}}</span>
