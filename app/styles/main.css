@@ -58,8 +58,9 @@ a{
 }
 
 .search-bar input[type='text']{
-    width: 170px;
+    width: 175px;
     font-style: italic;
+    float: left;
 }
 
 .search-bar input[type='submit']{
@@ -71,6 +72,7 @@ a{
     border: none;
     background-color: #d83c3c;
     font-size: 10.5px;
+    float: left;
 }
 
 
@@ -133,6 +135,11 @@ li a:hover {
     color: #13a0f8;
     text-transform:uppercase;
     font-weight: 700;
+}
+
+.page-name::after{
+    content: "  >";
+    color: #c5c3c3;
 }
 
 .tab-name{

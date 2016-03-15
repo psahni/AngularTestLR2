@@ -14,5 +14,9 @@ angular.module('App2')
         return false;
     };   
     
+    $scope.show_all = function(){
+        $scope.campaignServiceData.current_campaign_data = campaignServiceData.all_campaigns();
+    };
+    
    $scope.campaignServiceData.getCampaigns();         
   });

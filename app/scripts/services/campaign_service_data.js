@@ -31,7 +31,7 @@ angular.module('App2')
            campaign_service_data.end = campaign_service_data.end + 10;
            return campaign_service_data.current_campaign_data;
        }
-    }
+    };
         
     
     return campaign_service_data;
