@@ -1,3 +1,13 @@
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     margin:0;
+     padding: 0;
+}
+
+
 body{
     font-family: sans-serif;
 }
@@ -5,17 +15,8 @@ body{
     position: relative;
 }
 
-
-*{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-     box-sizing: border-box;
-}
-
 ul{
     list-style-type: none;  
-    margin: 0;
-    padding: 0;
 }
 
 a{
@@ -25,8 +26,20 @@ a{
 
 
 #main{
-    max-width: 1050px;
-    margin: 2% auto;
+    max-width: 980px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.clearfix:after, .clearfix:before{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.left-panel{
+    float: left;
+    width:240px;
 }
 
 .section{
@@ -42,25 +55,29 @@ a{
     position: relative;
 }
 
-.search-bar{
-    width: 240px;
+.search-bar{   
     height: 32px;
     background-color: #666666;
     padding: 5px 4px;
-    position: absolute;
-    left: 0px;
+    margin-bottom: 2px;    
 }
 
 
 .search-bar form{
     width: 100%;
-    margin:0 auto;
+    margin:0;
 }
 
 .search-bar input[type='text']{
     width: 175px;
     font-style: italic;
     float: left;
+    background: #eeeeee;
+    height: 20px;
+    border: 0;
+    line-height: 20px;
+    padding: 0 4px;
+    font-size: 11px;
 }
 
 .search-bar input[type='submit']{
@@ -71,8 +88,8 @@ a{
     color: white;
     border: none;
     background-color: #d83c3c;
-    font-size: 10.5px;
-    float: left;
+    font-size: 10px;
+    float: right;
 }
 
 
@@ -87,9 +104,13 @@ nav{
     display: block;
     padding: 25px 10px 10px 10px;
     text-align: center;   
-    font-size: 19.5px;    
+    font-size: 20px;
     font-weight: 600;
     color: white;
+}
+
+.nav-label span{
+    font-size: 15px;
 }
 
 .nav-element{
@@ -119,16 +140,10 @@ nav ul li:last-child {
     border-bottom: none;
 }
 
-
-.active {
+li a:hover, li a.active {
     background-color: white;
     color: #d83c3c;
     border-right: 5px solid #d83c3c;
-}
-
-li a:hover {
-    background-color: white;
-    color: #d83c3c;
 }
 
 .page-name, .page-heading{
@@ -145,10 +160,6 @@ li a:hover {
 .tab-name{
     color: #d83c3c;
     font-weight: 700;
-}
-
-.separater{
-    color: #c5c3c3;
 }
 
 .section.page-info{

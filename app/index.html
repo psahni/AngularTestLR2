@@ -19,15 +19,17 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
-    <div class="container" id="main">
-      <div class='search-bar'  ng-controller="SearchController">
-        <form ng-submit='search()'>
-          <input type='text' ng-model='q' name='q' placeholder='Search here...' class='search-input'>
-          <input type='submit' value='SEARCH'>
-        </form>
-      </div>      
+    <div class="container clearfix" id="main">
+      <div class='left-panel'>
+        <div class='search-bar'  ng-controller="SearchController">
+          <form ng-submit='search()'>
+            <input type='text' ng-model='q' name='q' placeholder='Search here...' class='search-input'>
+            <input type='submit' value='SEARCH'>
+          </form>
+        </div>      
+      </div>
       <nav class='nav-element'>
-        <span class='nav-label'>Dashboard</span>
+        <div class='nav-label'>D<span>ashboard</span></div>
         <ul>          
           <li><a href='#/' class='active'>Campaigns</a></li>
           <li><a href='#'>Account</a></li>
